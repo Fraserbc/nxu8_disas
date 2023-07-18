@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
 			addr += instr->len;
 		} else {
 			uint16_t val = nxu8_read16(decoder, addr);
-			printf("%05X\t%04X\t\tdw %04x\n", addr, val, val);
+			printf("%05Xh\t%04X\t\tdw %04x\n", addr, val, val);
 			addr += 2;
 		}
 	}
